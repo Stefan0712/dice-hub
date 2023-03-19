@@ -46,21 +46,7 @@ function App() {
       previewUrl: './images/img-6.png',
       views: 1.1,
       likes: 69
-    },
-    {
-      name: "Viddeo 7",
-      videoUrl: '',
-      previewUrl: './images/no-video.jpg',
-      views: 1.1,
-      likes: 69
-    },
-    {
-      name: "Viddeo 8",
-      videoUrl: '',
-      previewUrl: './images/no-video.jpg',
-      views: 1.1,
-      likes: 69
-    },
+    }
   ])
 
   const showModal = () =>{
@@ -128,6 +114,8 @@ function App() {
               <div className='video-name'>{video.name}</div>
             </div>
           )}
+         
+          
         </div>
       </div>
     </div>

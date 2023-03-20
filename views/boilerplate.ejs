@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Homepage</title>
+</head>
+<div class='top-btns'>
+    <a href='/'>DICEHUB</a>
+    <a href='/gaming-wellness'>GAMING WELLNESS</a>
+    <a href='/insights'>INSIGHTS</a>
+    <a href='/sites'>SITES</a>
+    <a href='/shop'>SHOP</a>
+    <a href='/trust-and-safety'>TRUST & SAFETY</a>
+    <a href='/en'>EN</a>
+  </div>
+  <nav>
+      <div class='top-nav'>
+        <a href="/" class='logo'>
+          <img src='/images/logo.png' alt="logo"></img>
+        </a>
+        <div class='search-bar'><img class='nav-icon' src='/images/search.png' alt="search icon"></img>Search Dicehub</div>
+        <div class='nav-btns'>
+          <button onClick={showModal} id='upload-btn'><img alt="" class='nav-icon' src='/images/upload.png'></img>Upload</button>
+          <button onClick={showModal} id='upgrade-btn'><img alt="" class='nav-icon' src='/images/star.png'></img>Upgrade</button>
+        </div>
+        <div class='auth-btns'>
+          <a href='/' onClick={showModal}>Log In</a>
+          <a href='/' onClick={showModal}>Sign Up</a>
+        </div>
+      </div>
+      <div class='bottom-nav'>
+        <a href='/'>HOME</a>
+        <a href='/'>DICE VIDEOS</a>
+        <a href='/categories'>CATEGORIES</a>
+        <a href='https://www.twitch.tv/diceman2' target='_blank'>TWITCH</a>
+        <a href='https://www.instagram.com/dicekeygames_official_/' target='_blank'>INSTAGRAM</a>
+        <a href='https://twitter.com/Diceman27' target='_blank'>TWITTER</a>
+        <a href='https://discord.gg/yweRQ9XT' target='_blank'>DISCORD</a>
+        <a href='/photos-and-gifs'>PHOTOS & GIFS</a>
+      </div>
+  </nav>
+<body>
+  <div class="ads" id="ad1"><img src="/images/ad.png" alt=""></div>
+  <div class="ads" id="ad2"><img src="/images/ad-v.png" alt=""></div>
+  <div class="ads" id="ad3"><img src="/images/ad-v.png" alt=""></div>
+  <%- body %>
+      
+</body>
+</html>

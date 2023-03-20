@@ -1,0 +1,151 @@
+.videos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 50vw;
+    margin-top: 75px;
+}
+video{
+    width: 100%;
+}
+.videos-container img{
+    filter: invert(100%)
+}
+.video-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.video-stats{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.video-stats .left{
+    display: flex;
+    gap: 15px;
+}
+.video-stats .right{
+    display: flex;
+    gap: 10px;
+
+}
+.video-stats .right .item{
+    display: flex;
+    gap: 5px;
+}
+.channel-info{
+    margin-top: 15px;
+    padding: 15px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.profile-img{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    
+}
+.channel-info .channel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.subscribe-btn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid gray;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem
+}
+.subscribe-btn img{
+    height: 20px;
+    width: 20px;
+}
+.subscribe-btn:hover{
+    border: 1px solid #ffa31a;
+    color: #ffa31a;
+}
+
+.comments{
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.comments-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.comments-btn{
+    width: 200px;
+    height: 25px;
+    border: 1px solid gray;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment{
+    width: 100%;
+    height: auto;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.comment-info{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.comment-info .profile-img{
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+}
+.comment-username{
+    grid-row: 1 / 1;
+    grid-column: 2 / 2;
+}
+.comment-date{
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+.more-videos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.more-videos img{
+    filter: invert(0)
+}
+
+.video-container .video-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+.video-details .video-stats{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+}
+
+

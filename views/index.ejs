@@ -1,0 +1,29 @@
+<%- layout('./boilerplate') %>
+<div class="index">
+    <h2>Hot Dice Videos in America</h2>
+    <div class='tags'>
+        <% for(tag of data.tags){ %>
+        <p><%= tag %></p>
+        <% } %>
+    </div>
+    <div class='videos-container'>
+        <% for(video of data.videos){ %>
+            <a class="video-link" href="/video/<%=video.id%>">
+                <div class='video-container'>
+                    <img src=<%=video.previewUrl%> alt="video preview"></img>
+                    <div class='video-details'>
+                    <div class='channel-name'>Dice games</div>
+                    <div class='video-stats'>
+                    <div class='video-views'><img alt="" src='./images/views.png'></img><%=video.views%>M</div>
+                    <div class='video-likes'><img alt="" src='./images/likes.png'></img><%=video.likes%>%</div>
+                    </div>
+                    </div>
+                    
+                    <div class='video-name'><%=video.name%></div>
+                </div>
+            </a>
+        <% } %>
+        
+        
+    </div>
+</div>

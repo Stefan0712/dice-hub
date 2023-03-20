@@ -1,0 +1,93 @@
+<%- layout('./boilerplate.ejs') %>
+
+<link rel="stylesheet" href="/styles/showVideo.css">
+<div class="show-video-page">
+    
+    <div class="videos-container">
+        <video src=<%=video.videoUrl%> controls="true"></video>
+        <div class="video-info">
+            <h1><%= video.name %></h1>
+            <div class="video-stats">
+                <div class="left">
+                    <p><%=video.views%>M Views</p>
+                    <p><%=video.likes%>%</p>
+                    <p><%=video.posted%> months ago</p>
+                </div>
+                <div class="right">
+                    <div class="item">
+                        <img src="/images/like.png" alt="">
+                        <%= video.likeNr %>
+                    </div>
+                    <div class="item">
+                        <img src="/images/dislike.png" alt="">
+                        <%= video.dislikeNr %>
+                    </div>
+                    <div class="item">
+                        <img src="/images/heart.png" alt="">
+                        <%= video.savedNr %>
+                    </div>
+                    <div class="item">
+                        <img src="/images/add.png" alt="">
+                        <p>Add to</p>
+                    </div>
+                    <div class="item">
+                        <img src="/images/next.png" alt="">
+                        <p>Jump to</p>
+                    </div>
+                    <div class="item">
+                        <img src="/images/report.png" alt="">
+                        <p>Report</p>
+                    </div>
+                    <div class="item">
+                        <img src="/images/share.png" alt="">
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <div class="channel-info">
+                <div class="channel">
+                    <img style="filter: invert(0%)" class="profile-img" src="/images/dice.png" alt="">
+                    <div>
+                        <h1>Dice games</h1>
+                        <p>69 Videos | 420 Subscribers</p>
+                    </div>
+                </div>
+                <a class="subscribe-btn" href="/twitch.tv"> <img src="/images/subscribe.png" alt=""> Subscribe</a>
+            </div>
+            <h1>More videos</h1>
+            <div class="more-videos">
+                <% for(video of videos){ %>
+                    <a class="video-link" href="/video/<%=video.id%>">
+                        <div class='video-container'>
+                            <img src=<%=video.previewUrl%> alt="video preview"></img>
+                                <div class='video-details'>
+                                    <div class='channel-name'>Dice games</div>
+                                    <div class='video-stats'>
+                                        <div class='video-views'><img alt="" src='/images/views.png'></img><%=video.views%>M</div>
+                                        <div class='video-likes'><img alt="" src='/images/likes.png'></img><%=video.likes%>%</div>
+                                    </div>
+                            </div>
+                            
+                            <div class='video-name'><%=video.name%></div>
+                        </div>
+                    </a>
+                <% } %>
+            </div>
+            <div class="comments">
+                <div class="comments-header">
+                    <h1>All Comments</h1>
+                    <div class="comments-btn">Popular Comments</div>
+                </div>
+                <div class="comment">
+                    <div class="comment-info">
+                        <img class="profile-img" src="/images/profile.png" alt="">
+                        <p class="comment-username">RandomUser</p>
+                        <p class="comment-date">Posted 2 hours ago</p>
+                    </div>
+                    <p class="comment-content">Nice vid! Keep going!</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

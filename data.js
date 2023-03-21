@@ -1,5 +1,4 @@
-const { defaults } = require("request")
-
+ 
 const videos = [
     {
       id: 0,
